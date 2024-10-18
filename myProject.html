@@ -49,14 +49,16 @@
               display: flex;
               flex-direction: row;
               gap: 40px;">
-              <div style="display: flex;flex-direction: column;">
+              <div style="display: flex;flex-direction: column;
+                            width:50%;">
                 <label for="input-project-start-date">Start Date</label>
-                <input id="input-project-start-date"/>
+                <input type="date" id="input-project-start-date"/>
             </div>
-            <div style="display: flex;flex-direction: column;">
+            <div style="display: flex;flex-direction: column;
+            width:50%;">
               <label for="input-project-end-date">End Date</label>
               <br>
-              <input id="input-project-end-date"/>
+              <input type="date" id="input-project-end-date"/>
             </div>
         </div>
               <div>
@@ -93,7 +95,7 @@
                         background-color: grey;
                         margin: 0;
                         ">choose</button>
-                    <img style="width 30px;height: 30px;"src="assets/icon/attach.png" alt="file"/>
+                    <img style="width: 30px;height: 30px;"src="assets/icon/attach.png" alt="file"/>
                   </label>
                   <input type="file" id="input-project-image" hidden />
                 </div>
@@ -106,11 +108,12 @@
                 font-size: medium;">submit</button>
               </div>
             </form>
+
           </div>
         </div>
-        
+
         <hr class="line" />
-        <div id="contents" class="project-list"> 
+        <div id="descriptions" class="project-list"> 
           
 <h1>MY PROJECT</h1>
 

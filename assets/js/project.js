@@ -2,12 +2,11 @@ const projects = [];
 
 function addProject(event) {
   event.preventDefault();
-
   const inputProjectTitle = document.getElementById("input-project-title").value;
   const inputProjectDescription = document.getElementById("input-project-description").value;
   const inputProjectImage = document.getElementById("input-project-image").files;
-  // const inputProjectDescription = document.getElementById("input-project-description").value;
-  // const inputProjectDescription = document.getElementById("input-project-description").value;
+  const inputStartDate = document.getElementById("input-project-start-date").value;
+  const inputEndDate = document.getElementById("input-project-start-date").value;
 
   const image = URL.createObjectURL(inputProjectImage[0]);
 
@@ -33,8 +32,8 @@ function renderProject() {
           </div>
           <div class="project-description">
             <div class="btn-group">
-              <button class="btn-edit">Edit Post</button>
-              <button class="btn-post" onclick="deleteProject(${index})">Delete Post</button>
+              <button class="btn-delete">Edit Post</button>
+              <button class="btn-contact" onclick="deleteProject(${index})">Delete Post</button>
             </div>
             <h1>
               <a href="project-detail.html" target="_blank"
@@ -98,7 +97,7 @@ function getFullTime(date) {
 
 function getDistanceTime(timePost) {
   const timeNow = new Date();
-  const distance = timeNow - timePost; // hasilnya miliseconds -> 1000ms = 1 detik
+  const distance = timeNow - timePost;
 
   const seconds = Math.floor(distance / 1000);
   const minutes = Math.floor(seconds / 60);

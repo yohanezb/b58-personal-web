@@ -7,6 +7,15 @@
     border-radius: 20px;
 }
 
+.btn-delete {
+    background-color: rgb(198, 79, 79);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 20px;
+}
+
 .btn-socialMedia {
     background-color: transparent;
     border-color: transparent;
