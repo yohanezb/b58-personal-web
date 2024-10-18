@@ -1,0 +1,40 @@
+
+nav ul {
+    background-color:#F4F3F3;
+    list-style-type: none;
+    display: flex;
+    margin-top: 0;
+    gap: 40px;
+    padding: 20px;
+    padding-left: 40px;
+    align-items: center;
+    position:relative;
+}
+.color-me {
+    color:#111727;
+}
+
+a:link {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+a:visited {
+    text-decoration: none;
+    font-size: x-large;
+}
+a:hover {
+    text-decoration: none;
+    color:grey;
+}
+a:active  {
+    text-decoration: none;
+}
+.btn-orange {
+  background-color: #111727;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+  border-radius: 10px;
+}

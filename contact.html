@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="assets/css/contact.css"/>
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="
+        background-color: lightgrey;
+        ">
+    <nav class="nav ul">
+        <ul>
+            <li>
+                <img src="assets/img/logo.png" style="height:30px">
+            </li>
+            <li>
+                <a href="index.html" class="color-me
+            "> Home </a>
+            </li>
+            <li>
+                <a href="myProject.html" class="color-me" style="
+                font-size: large;
+                font-weight: bold;"
+            > My Project </a>
+            </li>
+            <li style=" display: flex; justify-content: flex-end; width: 75%; ">
+                <a href=" contact.html" class="btn-contact"> Contact Me </a>
+            </li>
+
+
+        </ul>
+    </nav>
+<br>
+    <h1 style="margin:auto;
+    text-align: center;
+    font-weight: bold;">GET IN TOUCH</h1>
+        <div style="display: flex; justify-content: center; margin-top: 50px">
+          <form
+            onsubmit="sendToMail(event)"
+            style="display: flex; flex-direction: column; gap: 10px; width: 300px"
+          >
+            <div>
+              <label>Name</label>
+              <input id="input-name" />
+            </div>
+            <div>
+              <label>Email</label>
+              <input id="input-email" />
+            </div>
+            <div>
+              <label>Phone Number</label>
+              <input id="input-phone" />
+            </div>
+            <div>
+              <label>Subject</label>
+              <select id="input-subject">
+                <option value="" disabled selected>select</option>
+                <option value="Fullstack Developer">Fullstack Developer</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+              </select>
+            </div>
+            <div>
+              <label>Your message</label>
+              <textarea style="resize: none;" id="input-message"></textarea>
+            </div>
+            <button class="btn-contact">Submit</button>
+          </form>
+        </div>
+    
+        <script src="assets/js/contact.js"></script>
+      </body>
+    </html>
+    

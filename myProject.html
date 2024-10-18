@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="assets/css/contact.css"/>
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="
+        background-color: lightgrey;
+        ">
+    <nav class="nav ul">
+        <ul>
+            <li>
+                <img src="assets/img/logo.png" style="height:30px">
+            </li>
+            <li>
+                <a href="index.html" class="color-me
+            "> Home </a>
+            </li>
+            <li>
+                <a href="myProject.html" class="color-me" style="
+                font-size: large;
+                font-weight: bold;"
+            > My Project </a>
+            </li>
+            <li style=" display: flex; justify-content: flex-end; width: 75%; ">
+                <a href=" contact.html" class="btn-contact"> Contact Me </a>
+            </li>
+
+
+        </ul>
+    </nav>
+
+    <div class="project">
+        <div class="project-form">
+          <div class="form-container">
+            <form onsubmit="addProject(event)">
+              <h1>ADD MY PROJECT</h1>
+              <div>
+                <label for="input-project-title">Project Name</label>
+                <input id="input-project-title" />
+              </div>
+              <div style="
+              display: flex;
+              flex-direction: row;
+              gap: 40px;">
+              <div style="display: flex;flex-direction: column;">
+                <label for="input-project-start-date">Start Date</label>
+                <input id="input-project-start-date"/>
+            </div>
+            <div style="display: flex;flex-direction: column;">
+              <label for="input-project-end-date">End Date</label>
+              <br>
+              <input id="input-project-end-date"/>
+            </div>
+        </div>
+              <div>
+                <label for="input-project-description">Description</label>
+                <textarea style="resize: none; height: 150px;"id="input-project-description"></textarea>
+                <label>Technologies</label>
+              </div>
+              <div class="checkbox-container">
+                <div>
+                    <input type="checkbox" id="node-js" name="node-js">
+                    <label for="node-js"> Node JS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="next-js" name="next-js">
+                    <label for="next-js"> Next JS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="react-js" name="react-js">
+                    <label for="react-js"> React JS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="type-script" name="type-script">
+                    <label for="type-script"> TypeScript</label>
+                </div>
+            </div>            
+              <div>
+                <label>Upload Image</label>
+                <div style="margin: 0
+                ;padding:0px;
+                padding-right: 5px;"class="input-project-image-group">
+                  <label for="input-project-image">
+                    <button style="
+                        width:100px;
+                        background-color: grey;
+                        margin: 0;
+                        ">choose</button>
+                    <img style="width 30px;height: 30px;"src="assets/icon/attach.png" alt="file"/>
+                  </label>
+                  <input type="file" id="input-project-image" hidden />
+                </div>
+              </div>
+              <div style="text-align: right;">
+                <button style="    background-color: rgb(9, 9, 9);
+                padding: 10px;
+                color: white;
+                font-weight: bold;
+                font-size: medium;">submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <hr class="line" />
+        <div id="contents" class="project-list"> 
+          
+<h1>MY PROJECT</h1>
+
+  
+      <script src="assets/js/project.js"></script>
+    </body>
+    </html>

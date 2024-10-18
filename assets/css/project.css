@@ -1,0 +1,199 @@
+.project-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-form .form-container {
+    width: 500px;
+  }
+  
+  .project-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .project-form form label {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .project-form form input,
+  textarea,
+  select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+  }
+  
+  .project-form form textarea {
+    height: 250px;
+  }
+  
+  .project-form form .input-project-image-group {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .project-form form .input-project-image-group label p {
+    font-size: 15px;
+  }
+  
+  .project-form form .input-project-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project-form form .button-group {
+    text-align: right;
+  }
+  
+  .project-form form button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: #ec4d37;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .project hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* project list */
+  .project .project-list {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .project .project-list .project-list-item {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+  }
+  
+  .project .project-list .project-list-item .project-image {
+    flex: 1;
+  }
+  
+  .project .project-list .project-list-item .project-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .project .project-list .project-list-item .project-content {
+    padding-left: 20px;
+    flex: 2;
+  }
+  
+  .project-content p {
+    width: 500px;
+    word-wrap: break-word;
+  }
+  
+  .project .project-list .btn-group {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .project .project-list .btn-group .btn-edit {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #dbdbdb;
+  }
+  
+  .project .project-list .btn-group .btn-post {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #ec4d37;
+    color: #fff;
+  }
+  
+  .project .project-list h1 a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .project .project-list .detail-project-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .project .project-list .project-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+  }
+  
+  /* project Detail */
+  .project-detail {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-detail-container {
+    width: 80%;
+    margin: 40px 0;
+  }
+  
+  .project-detail-container img {
+    width: 100%;
+  }
+  
+  .project-detail-container h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+  
+  .project-detail-container .author {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+  
+  .project-detail-container p {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: justify;
+  }
+  
