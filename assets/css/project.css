@@ -81,7 +81,7 @@
     margin-left: auto;
   }
   
-  /* project list */
+  
   .project .project-list {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -104,8 +104,8 @@
   }
   
   .project .project-list .project-list-item .project-image img {
-    width: 100%;
-    height: 200px;
+    width: 95%;
+    height: 300px;
     object-fit: cover;
   }
   
@@ -144,10 +144,11 @@
     color: #000000;
   }
   
-  .project .project-list .detail-project-content {
+  .project .project-list .detail-project-desccription {
     font-weight: 300;
     font-size: 12px;
     line-height: 20px;
+    margin-top:0
   }
   
   .project .project-list .project-list-item p {
@@ -157,8 +158,7 @@
     line-height: 20px;
     text-align: justify;
   }
-  
-  /* project Detail */
+
   .project-detail {
     display: flex;
     justify-content: center;

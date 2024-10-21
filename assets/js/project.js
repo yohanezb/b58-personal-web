@@ -5,9 +5,26 @@ function addProject(event) {
   const inputProjectTitle = document.getElementById("input-project-title").value;
   const inputProjectDescription = document.getElementById("input-project-description").value;
   const inputProjectImage = document.getElementById("input-project-image").files;
-  const inputStartDate = document.getElementById("input-project-start-date").value;
-  const inputEndDate = document.getElementById("input-project-start-date").value;
+  const inputStartDate = new Date(document.getElementById("input-project-start-date").value);
+  const inputEndDate = new Date (document.getElementById("input-project-end-date").value);
+ 
+  const selectedTechnologies = [];
+  if (document.getElementById("node-js").checked) {
+    selectedTechnologies.push("NODE-JS");
+  }
+  if (document.getElementById("next-js").checked) {
+    selectedTechnologies.push("NEXT-JS");
+  }
+  if (document.getElementById("react-js").checked) {
+    selectedTechnologies.push("REACT-JS");
+  }
+  if (document.getElementById("type-script").checked) {
+    selectedTechnologies.push("TYPESCRIPT");
+  }
 
+  const duration = Math.floor((inputEndDate - inputStartDate) / (1000 * 60 * 60));
+
+  
   const image = URL.createObjectURL(inputProjectImage[0]);
 
   const project = {
@@ -15,11 +32,16 @@ function addProject(event) {
     description: inputProjectDescription,
     createdAt: new Date(),
     image: image,
+    duration : duration,
+    technologies : selectedTechnologies,
+    startDate : inputStartDate,
+    endDate : inputEndDate, 
   };
 
   projects.unshift(project);
   console.log(projects);
   renderProject();
+  console.log(duration);
 }
 
 function renderProject() {
@@ -41,13 +63,19 @@ function renderProject() {
               >
             </h1>
             <div class="detail-project-description">
-                ${getFullTime(projects[index].createdAt)} | Ichsan Emrald Alamsyah
+                ${getFullTime(projects[index].createdAt)} || Yohanes Budhy Andryanto
+            </div>
+            <p>
+              ${getDistanceTime(projects[index].createdAt)}
+            </p>
+            <div class="detail-project-description">
+              ${new Date(projects[index].startDate).toLocaleDateString()} - ${new Date(projects[index].endDate).toLocaleDateString()} (${projects[index].duration} days)
+              </div>
+            <div class="detail-project-description">
+              <p><strong>Technologies:</strong> ${projects[index].technologies.join(', ')} 
             </div>
             <p>
               ${projects[index].description}
-            </p>
-            <p>
-                ${getDistanceTime(projects[index].createdAt)}
             </p>
           </div>
         </div>`;
@@ -114,3 +142,4 @@ function getDistanceTime(timePost) {
     return `${day} day ago`;
   }
 }
+
